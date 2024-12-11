@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-const name = 'App'
+const name = 'TasksList'
 
 export default defineComponent({
   name,
@@ -25,22 +25,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="size-full">
-    <router-view></router-view>
-  </div>
+  <div class="tomato">bbb</div>
 </template>
 
 
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+<style scoped>
 
-html,
-body,
-#app {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
 </style>
