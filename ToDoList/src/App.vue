@@ -33,6 +33,10 @@ export default defineComponent({
 
 
 <style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #app {
