@@ -39,6 +39,7 @@ export default defineComponent({
       :id="i.id"
       :concluded="i.concluded"
       @exclude="tasksList = $event"
+      @conclude="tasksList = $event"
     />
   </div>
 </template>

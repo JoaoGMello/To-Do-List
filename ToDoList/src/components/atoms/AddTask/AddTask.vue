@@ -4,6 +4,7 @@ import { defineComponent } from "vue";
 import Card from "../Card/Card.vue";
 import PrimaryButton from "../PrimaryButton/PrimaryButton.vue";
 import TaskClass from "@/classes/TaskClass";
+import ETypeToast, { toast } from "@/tools/toast";
 const name = 'AddTask'
 
 export default defineComponent({
@@ -32,6 +33,7 @@ export default defineComponent({
       this.task.id = Math.random().toString(16).slice(2)
       this.tasksList.push(this.task)
       localStorage.setItem('TasksList', JSON.stringify(this.tasksList));
+      toast(ETypeToast.Success, 'Sucesso!', 'Tarefa adicionada com sucesso!')
       this.$router.push('/tasks-list')
     }
   },
