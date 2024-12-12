@@ -30,7 +30,7 @@ export default defineComponent({
     <div class="w-[25%]">
       <SideBar/>
     </div>
-    <div class="size-full">
+    <div class="size-full p-5">
       <router-view></router-view>
     </div>
   </div>

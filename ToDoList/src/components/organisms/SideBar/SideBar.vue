@@ -38,6 +38,7 @@ export default defineComponent({
             hover-color="#f7f7f7"
             weight-text="bold"
             rounding="30px"
+            @click="$router.push('/tasks-list')"
           />
         </div>
 
@@ -49,6 +50,7 @@ export default defineComponent({
             hover-color="#f7f7f7"
             weight-text="bold"
             rounding="30px"
+            @click="$router.push('/add-tasks')"
           />
         </div>
       </div>
